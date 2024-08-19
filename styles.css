@@ -1,0 +1,174 @@
+/* Animação de rolagem suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animação de foco nos botões */
+.cta-button, .newsletter button {
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover, .newsletter button:hover {
+    background-color: #e0a800;
+}
+
+/* Configuração do corpo e fontes */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Fonte personalizada */
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Configuração da imagem de fundo para a tela inicial */
+.hero {
+    background: url('fundo\ site.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 150px 20px;
+    text-align: center;
+    position: relative; /* Garante que os elementos posicionados absolutamente dentro dele sejam posicionados em relação a ele */
+}
+
+/* Configuração do menu de navegação sobre a imagem de fundo */
+.transparent-nav {
+    background: rgba(0, 0, 0, 0.0); /* Ajuste a transparência conforme necessário */
+    position: absolute; /* Posiciona o menu sobre a imagem */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10; /* Garante que o menu fique acima da imagem de fundo */
+    padding: 15px 0; /* Adiciona um pouco de espaço ao redor do menu */
+}
+
+/* Estilo da lista e links da navbar */
+.transparent-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.transparent-nav ul li {
+    margin: 0 15px; /* Espaçamento entre os itens da lista */
+    position: relative; /* Necessário para o efeito de sublinhado */
+}
+
+.transparent-nav ul li a {
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    font-family: 'Roboto', sans-serif; /* Fonte personalizada */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+    padding: 10px 15px; /* Espaçamento interno do link */
+    border-radius: 5px; /* Arredondamento dos cantos do fundo */
+    transition: all 0.3s ease; /* Transição suave para todas as propriedades */
+    position: relative; /* Necessário para o efeito de sublinhado */
+}
+
+/* Efeito ao passar o mouse sobre os links */
+.transparent-nav ul li a:hover {
+    color: #fff; /* Cor do texto ao passar o mouse */
+    background: rgba(255, 255, 255, 0.2); /* Fundo leve ao passar o mouse */
+}
+
+/* Efeito de sublinhado animado */
+.transparent-nav ul li a::after {
+    content: ''; /* Necessário para criar o pseudo-elemento */
+    position: absolute; /* Posiciona o sublinhado em relação ao link */
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #ffc107; /* Cor do sublinhado */
+    transition: width 0.3s ease; /* Transição suave para a largura do sublinhado */
+}
+
+.transparent-nav ul li a:hover::after {
+    width: 100%; /* Faz o sublinhado ocupar toda a largura do link */
+}
+
+/* Configuração das seções */
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.service {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+}
+
+.service h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.about {
+    padding: 50px 20px;
+    background: #007bff;
+    color: #fff;
+    text-align: center;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 60%;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background: #ffc107;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.social-media a {
+    color: #ffc107;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Configuração do botão de chamada para ação */
+.hero .cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #ffc107;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero .cta-button:hover {
+    background: #e0a800;
+}
