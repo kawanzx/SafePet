@@ -9,7 +9,7 @@ html {
 }
 
 .cta-button:hover, .newsletter button:hover {
-    background-color: #e0a800;
+    background-color: #fff;
 }
 
 /* Configuração do corpo e fontes */
@@ -28,15 +28,15 @@ body {
 /* Configuração da imagem de fundo para a tela inicial */
 .hero {
     background: url('fundo\ site.jpg') no-repeat center center/cover;
-    color: #fff;
+    color: #5a1c01;
     padding: 150px 20px;
-    text-align: center;
+    text-align: left;
     position: relative; /* Garante que os elementos posicionados absolutamente dentro dele sejam posicionados em relação a ele */
 }
 
 /* Configuração do menu de navegação sobre a imagem de fundo */
 .transparent-nav {
-    background: rgba(0, 0, 0, 0.0); /* Ajuste a transparência conforme necessário */
+    background: rgba(0, 0, 0, 0.1); /* Ajuste a transparência conforme necessário */
     position: absolute; /* Posiciona o menu sobre a imagem */
     top: 0;
     left: 0;
@@ -162,7 +162,7 @@ body {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 25px;
-    background: #ffc107;
+    background: #ffffffc2;
     color: #333;
     text-decoration: none;
     border-radius: 5px;
@@ -170,5 +170,5 @@ body {
 }
 
 .hero .cta-button:hover {
-    background: #e0a800;
+    background: #ffffff;
 }
